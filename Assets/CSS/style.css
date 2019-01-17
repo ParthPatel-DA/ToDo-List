@@ -53,6 +53,23 @@ body {
         cursor: pointer;
     }
 
+    .txtTask {
+        font-size: 17px;
+        color: #00a4ef;
+        font-weight: bold;
+        width: 100%;
+        padding: 0px;
+        border: 0px;
+        outline: none;
+        cursor: pointer;
+    }
+
+    .txtTask:focus {
+        color: #190301;
+        font-weight: 100;
+        cursor: text;
+    }
+
         .sub-Task {
             margin-left: 25px;
         }
