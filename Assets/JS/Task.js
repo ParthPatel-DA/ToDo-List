@@ -5,7 +5,7 @@ export class Task{
         this.name = name;
         this.description = 'none';
         this.priority = priority;
-        this.categorisation = categorisation;
+        this.categorisation = 'Select Category';
         this.subTask = new Array();
         this.isComplete = false;
     }
