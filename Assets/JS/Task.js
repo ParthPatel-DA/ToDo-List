@@ -3,9 +3,11 @@ export class Task{
     constructor(id, name, priority = 1, categorisation = 1){
         this.id = id;
         this.name = name;
+        this.description = 'none';
         this.priority = priority;
         this.categorisation = categorisation;
         this.subTask = new Array();
+        this.isComplete = false;
     }
 
     // Add Sub Task
