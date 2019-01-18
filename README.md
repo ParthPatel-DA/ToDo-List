@@ -17,7 +17,7 @@ Solulab Inc JavaScript Project
   
   Ticket 6: Make the task as complete
 	
-## Link to github project : https://github.com/Parth2412/Calculator
+## Link to github project : https://github.com/ParthPatel-DA/ToDo-List
 
 # User Guide:
 
