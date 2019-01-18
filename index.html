@@ -16,9 +16,13 @@
 <body>
     <header class="header"><a href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>To Do</header>
     <div class="body">
-        <div class="sidebar">Home</div>
+        <div class="sidebar">
+            <div><a href="#" id="ShowList">Show Task List</a></div>
+            <div><a href="#" id="ShowList">Show Completed Task List</a></div>
+        </div>
         <div class="list" id="list">
-            <input type="text" id="txtSearch" placeholder="Search Task">
+            <input type="text" id="txtSearch" placeholder="Search Task" list="SearchData">
+            <datalist id='SearchData'></datalist>
             <div class="Task"><input class="txtTask" type="text" value="+ Add Task" id="AddTask" placeholder="+ Add Task"></div>
         </div>
         <div class="detail" id="detail">
