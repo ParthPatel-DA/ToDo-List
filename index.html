@@ -18,36 +18,46 @@
     <div class="body">
         <div class="sidebar">Home</div>
         <div class="list" id="list">
+            <input type="text" id="txtSearch" placeholder="Search Task">
             <div class="Task"><input class="txtTask" type="text" value="+ Add Task" id="AddTask" placeholder="+ Add Task"></div>
         </div>
-        <div class="detail">
-            <header class="Task-Header">Task 1</header>
-            <a href="#">Category</a>
+        <div class="detail" id="detail">
+            <!-- <header class="Task-Header">
+                <input type="text" id="txtTaskName" value="Task 1">
+                <input type="hidden" id="txtTaskID" value="1">
+            </header>
+            <a href="#">Select Category</a>
+            <input type="text" id="txtCategory" list="Category" placeholder="Select Category">
+            <datalist id="Category">
+                <option value="Select Category">
+                <option value="Home">
+                <option value="Office">
+                <option value="Friend">
+            </datalist>
+            <div><textarea id="txtDescription">none</textarea></div>
             <div class="Task-label">
-                <!-- <div class="TaskDetail">
+                <div class="TaskDetail">
                     <div class="label">Label 1 <a href="#" class="fa fa-times" aria-hidden="true"></a></div>
                     <div class="label">Label 1 <a href="#" class="fa fa-times" aria-hidden="true"></a></div>
                     <div class="label">Label 1 <a href="#" class="fa fa-times" aria-hidden="true"></a></div>
                     <div class="label">Label 1 <a href="#" class="fa fa-times" aria-hidden="true"></a></div>
                     <div class="label"><a href="#">+ Add Label</a></div>
-                </div> -->
-                <div class="subTask-List">
-                    <h3>Sub Task</h3>
+                </div>
+                <div class="subTask-List" id="subTask-List">
+                    <h3>Sub Tasks List</h3>
                     <a href="#">+ Add Sub Task</a>
-                    <!-- <div class="subTask">
-                        <div class="subTask-Title">Sub Task 1</div>
-                        <div class="subTask-Detail">Detail</div>
-                    </div> -->
                     <div class="subTask">
-                        <div class="subTask-Title">Sub Task 1</div>
-                        <div class="subTask-Detail">Detail</div>
+                        <div class="subTask-Title"><input type="text" id="txtSubTaskTitle" value="Sub Task 1"></div>
+                        <div class="subTask-Detail"><textarea id="txtSubTaskDetail">none</textarea>
+                        </div>
                     </div>
                     <div class="subTask">
-                        <div class="subTask-Title">Sub Task 2</div>
-                        <div class="subTask-Detail">Detail</div>
+                        <div class="subTask-Title"><input type="text" id="txtSubTaskTitle" value="Sub Task 2"></div>
+                        <div class="subTask-Detail"><textarea id="txtSubTaskDetail">none</textarea>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
     <footer>&copy; Solulab Inc 2019</footer>

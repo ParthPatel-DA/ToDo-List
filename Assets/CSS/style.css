@@ -32,7 +32,8 @@ body {
 }
 
 .sidebar {
-    flex: 1;
+    /* flex: 1; */
+    width: 217px;
     background-color: #fff;
     box-shadow: 2px 0px 0px #8c8d8d;
     /* width: 15%; */
@@ -47,10 +48,23 @@ body {
     padding: 25px;
 }
 
+    #txtSearch {
+        width: 100%;
+        margin-bottom: 20px;
+        font-size: 20px;
+        border: 2px solid #00a4ef;
+        padding: 2px 5px;
+        outline: none;
+    }
+
     .Task {
         border-bottom: 1px solid #c3c7c7;
         padding: 15px 0px 15px 10px;
         cursor: pointer;
+    }
+
+    .Task > a {
+        margin-right: 7px;
     }
 
     .txtTask {
@@ -79,6 +93,10 @@ body {
             padding: 15px 0px 15px 10px;
         }
 
+        .sub-Task > div > a {
+            margin-right: 7px;
+        }
+
         .sub-Task > div:first-child {
             border-top: 1px solid #c3c7c7;
             margin-top: 15px;
@@ -93,6 +111,7 @@ body {
             text-decoration: none;
             color: #00a4ef;
             font-weight: bold;
+            margin-right: 0px;
         }
 
         
@@ -104,20 +123,33 @@ body {
 .detail {
     flex: 1.5;
     padding: 35px 20px 0px 0px;
+    display: none;
 }
 
-    .Task-Header {
+    .Task-Header > input[type=text] {
         font-size: 25px;
         font-weight: bolder;
         margin-bottom: 5px;
+        border: 0px;
+        outline: none;
     }
 
-    .detail > a {
+    .detail > a, .detail > #txtCategory {
         text-decoration: none;
         font-size: 17px;
         color: #00a4ef;
         font-weight: bold;
+        border: 0px;
+        outline: none;
     }
+
+    #txtCategory {
+        display: none;
+    }
+
+    #txtCategory::-webkit-calendar-picker-indicator {
+        display: none;
+      }
 
     .Task-label {
         padding-top: 10px;
@@ -174,23 +206,51 @@ body {
                 margin-bottom: 8px;
             }
 
+            #txtDescription {
+                width: 100%;
+                border: 0px;
+                resize: none;
+                outline: 0px;
+                font-style: italic;
+                text-align: justify;
+            }
+
             .subTask {
                 clear: both;
                 margin-bottom: 10px;
             }
 
-                .subTask-Title {
+                .subTask-Title, #txtSubTaskTitle {
                     padding: 10px 15px;
+                    font-size: 14px;
                     background-color: #8c989e;
                     color: #fff;
                     cursor: pointer;
                     font-weight: bolder;
                 }
 
+                #txtSubTaskTitle {
+                    padding: 0px 0px;
+                    width: 100%;
+                    border: 0px;
+                    outline: none;
+                }
+
                 .subTask-Detail {
                     padding: 10px 15px;
                     background-color: #c3c7c7;
-                    display: none;
+                    display: block;
+                }
+
+                #txtSubTaskDetail {
+                    border: 0px;
+                    font-style: italic;
+                    text-align: justify;
+                    width: 100%;
+                    height: auto;
+                    outline: none;
+                    background-color: #c3c7c7;
+                    resize: none;
                 }
 
 footer {
